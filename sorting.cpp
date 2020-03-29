@@ -59,3 +59,34 @@ void sorting::SelectionSort() {
         cout << i << " ";
     cout << endl;
 }
+
+void sorting::BubbleSort() {
+
+
+    cout<< __PRETTY_FUNCTION__<<endl;
+
+
+    int n;
+    int x;
+    bool swapped;
+    n = v1.size();
+    swapped = true;
+    x = -1;
+
+    while (swapped){
+        swapped = false;
+        x = x + 1;
+        for (int i = 1; i < n - x ; ++i) {
+            if (v1[i - 1] > v1[i]){
+                swap(v1[i-1],v1[i]);
+                swapped = true;
+            }
+            
+        }
+    }
+
+    for ( auto &i : v1)
+        cout << i << " ";
+    cout << endl;
+
+}

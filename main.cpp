@@ -15,6 +15,7 @@ int main(int, char*[]){
     vector<int> v{5,6,1,8,3,6,8,5,2,7,9,3,9,12,8};
 
     sorting s1{v};
-    s1.SelectionSort();
+
+    s1.BubbleSort();
     return 0;
 }

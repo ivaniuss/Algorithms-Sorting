@@ -18,6 +18,7 @@ public:
     explicit sorting(vector<int>&);
     void InsertSort();
     void SelectionSort();
+    void BubbleSort();
 };
 
 
