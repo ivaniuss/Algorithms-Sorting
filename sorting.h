@@ -1,14 +1,23 @@
 //
-// Created by ivaniuss on 3/29/20.
+// Created by ivaniuss on 3/28/20.
 //
 
-#ifndef ALGORITHMS_SORTING_SORTING_H
-#define ALGORITHMS_SORTING_SORTING_H
 
+#ifndef SORTING_SORTING_H
+#define SORTING_SORTING_H
+
+#include <iostream>
+#include <vector>
+using namespace std;
 
 class sorting {
+private:
+    vector<int> v1;
 
+public:
+    explicit sorting(vector<int>&);
+    void InsertSort();
 };
 
 
-#endif //ALGORITHMS_SORTING_SORTING_H
+#endif //SORTING_SORTING_H
