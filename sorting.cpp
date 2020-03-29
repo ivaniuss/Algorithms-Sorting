@@ -36,3 +36,26 @@ void sorting::InsertSort() {
     cout << endl;
 
 }
+
+void sorting::SelectionSort() {
+
+    cout<< __PRETTY_FUNCTION__<<endl;
+
+    int min  = 0;
+
+    for (int i = 0; i < v1.size() - 1 ; ++i) {
+        min  = i;
+        for (int j = i+ 1; j < v1.size(); ++j) {
+            if (v1[j] < v1[min]){
+                min = j;
+            }
+            if (min!= i){
+                swap(v1[min], v1[i]);
+        }
+
+        }
+    }
+    for ( auto &i : v1)
+        cout << i << " ";
+    cout << endl;
+}
